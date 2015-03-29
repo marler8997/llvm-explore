@@ -1,0 +1,36 @@
+
+Download
+--------------------------------------------------
+llvm.org/builds
+
+Download Windows installer
+
+
+
+Compile C to IR
+--------------------------------------------------
+clang -S -emit-llvm <source>.c
+
+Output: <source>.ll
+
+Optimize IR
+--------------------------------------------------
+opt-3.0 -S <source>.ll
+
+IR to Machine Code
+--------------------------------------------------
+llc-3.0 -march=<arch> <source>.ll
+
+Output: <source>.s
+
+-O3             Turns on optimization
+-march=<arch>   x86, x86-64, arm
+
+
+
+
+clang flags
+--------------------------------------------------
+
+-Os    Optimize the IR (makes it shorter and easier to read)
+
