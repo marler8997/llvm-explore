@@ -1,0 +1,8 @@
+extern sin(arg);
+extern cos(arg);
+extern atan2(arg1 arg2);
+
+atan2(sin(.4), cos(42))
+def foo(x y) x + y;
+def foo(x y) x+y y;
+extern sin(a);
